@@ -2,11 +2,14 @@
 此服务用于非侵入式监控openstack平台虚拟机磁盘容量和使用量，以及磁盘所挂载的文件系统的容量及使用量，
 虚拟机内部需要提前安装好qemu-guest-agent客户端。
 
-## 制作容器镜像
+## docker build
 ```make docker-build```
 
-## 制作二进制文件
+## binary
 ```make build```
+
+## Running
+需要挂载virsh命令到容器中，支持6.0.2以上版本的virsh
 
 ## metrics
 ```
